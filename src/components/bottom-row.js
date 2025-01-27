@@ -32,36 +32,36 @@ export default function () {
       .translate_y(rowSpacing),
     needle()
       .translate_x(
-        basketDiameter / 2 +
-        needleDiameter / 2 +
-        10 +
-        postExtraWidth / 2,
+        basketDiameter / 2 + needleDiameter / 2 + 10 + postExtraWidth / 2,
       )
       .translate_z(needleHeight / 2 - needleInset),
     tamp()
       .translate_y(rowSpacing)
       .translate_x(
-        basketDiameter / 2 +
-        needleDiameter / 2 +
-        10 +
-        postExtraWidth / 2,
+        basketDiameter / 2 + needleDiameter / 2 + 10 + postExtraWidth / 2,
       )
       .translate_z(tampOuterHeight / 2 - tampInset),
     pourover()
       .translate_y((basketHeight + ringHeight + 10) / 2)
       .translate_x(
         basketDiameter / 2 +
-        tampDiameter / 4 +
-        columnSpacing +
-        postExtraWidth +
-        10 +
-        pouroverBaseDiameter / 2,
+          tampDiameter / 4 +
+          columnSpacing +
+          postExtraWidth +
+          10 +
+          pouroverBaseDiameter / 2,
       )
       .translate_z(pouroverIntersectionHeight / 2),
-  ).translate_y((basketHeight / 2 + ringHeight / 2) * -1).translate_x((basketDiameter / 2 +
-    tampDiameter / 2 +
-    columnSpacing +
-    postExtraWidth +
-    columnSpacing +
-    pouroverBaseDiameter / 2) / 2 * -1);
+  )
+    .translate_y((basketHeight / 2 + ringHeight / 2) * -1)
+    .translate_x(
+      ((basketDiameter / 2 +
+        tampDiameter / 2 +
+        columnSpacing +
+        postExtraWidth +
+        columnSpacing +
+        pouroverBaseDiameter / 2) /
+        2) *
+        -1,
+    );
 }
