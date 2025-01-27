@@ -14,42 +14,45 @@ difference()
       }
     }
   }
-  translate(v = [0, 60, 0])
+  translate(v = [5, 0, 0])
   {
-    translate(v = [0, 0, 40])
+    translate(v = [0, 55, 0])
     {
-      translate(v = [-113.5, 0, 0])
+      translate(v = [0, 0, 40])
       {
-        translate(v = [8.5, 0, 0])
+        translate(v = [-113.5, 0, 0])
         {
-          union()
+          translate(v = [8.5, 0, 0])
           {
-            translate(v = [0, 0, 65])
+            union()
             {
-              cylinder(h = 230, r = 17, center = true);
-            }
-            translate(v = [0, 0, 50])
-            {
-              translate(v = [62, 0, 0])
+              translate(v = [0, 0, 65])
               {
-                cube(size = [15, 15, 200], center = true);
+                cylinder(h = 230, r = 17, center = true);
               }
-            }
-            translate(v = [167, 0, 0])
-            {
-              translate(v = [-35, 0, 0])
+              translate(v = [0, 0, 50])
               {
-                union()
+                translate(v = [62, 0, 0])
                 {
-                  translate(v = [0, 0, 23])
+                  cube(size = [15, 15, 200], center = true);
+                }
+              }
+              translate(v = [167, 0, 0])
+              {
+                translate(v = [-35, 0, 0])
+                {
+                  union()
                   {
-                    cylinder(h = 146, r = 25, center = true);
-                  }
-                  translate(v = [0, 0, 21.5])
-                  {
-                    translate(v = [70, 0, 0])
+                    translate(v = [0, 0, 23])
                     {
                       cylinder(h = 146, r = 25, center = true);
+                    }
+                    translate(v = [0, 0, 21.5])
+                    {
+                      translate(v = [70, 0, 0])
+                      {
+                        cylinder(h = 146, r = 25, center = true);
+                      }
                     }
                   }
                 }
@@ -62,73 +65,70 @@ difference()
   }
   translate(v = [0, -40, 0])
   {
-    #union()
+    translate(v = [-99.5, 0, 0])
     {
-      translate(v = [-99.5, 0, 0])
+      translate(v = [0, -26, 0])
       {
-        translate(v = [0, -26, 0])
+        union()
         {
-          union()
+          translate(v = [0, 0, 11.5])
           {
-            translate(v = [0, 0, 11.5])
+            rotate(a = 90, v = [1, 0, 0])
+            {
+              cylinder(h = 27, r = 33.5, center = true);
+            }
+          }
+          translate(v = [0, 60, 0])
+          {
+            translate(v = [0, 0, 13.5])
             {
               rotate(a = 90, v = [1, 0, 0])
               {
                 cylinder(h = 27, r = 33.5, center = true);
               }
             }
-            translate(v = [0, 60, 0])
+          }
+          translate(v = [0, 0, 21.5])
+          {
+            translate(v = [75.5, 0, 0])
             {
-              translate(v = [0, 0, 13.5])
-              {
-                rotate(a = 90, v = [1, 0, 0])
-                {
-                  cylinder(h = 27, r = 33.5, center = true);
-                }
-              }
+              cylinder(h = 83, r = 9, center = true);
             }
-            translate(v = [0, 0, 21.5])
+          }
+          translate(v = [0, 0, 40])
+          {
+            translate(v = [75.5, 0, 0])
             {
-              translate(v = [75.5, 0, 0])
+              translate(v = [0, 60, 0])
               {
-                cylinder(h = 83, r = 9, center = true);
-              }
-            }
-            translate(v = [0, 0, 32])
-            {
-              translate(v = [75.5, 0, 0])
-              {
-                translate(v = [0, 60, 0])
+                translate(v = [0, 0, -36.5])
                 {
-                  translate(v = [0, 0, -36.5])
+                  union()
                   {
-                    union()
+                    cylinder(h = 7, r = 27, center = true);
+                    translate(v = [0, 0, 43.5])
                     {
-                      cylinder(h = 7, r = 27, center = true);
-                      translate(v = [0, 0, 43.5])
-                      {
-                        cylinder(h = 80, r = 30, center = true);
-                      }
+                      cylinder(h = 80, r = 30, center = true);
                     }
                   }
                 }
               }
             }
-            translate(v = [0, 0, 15])
+          }
+          translate(v = [0, 0, 15])
+          {
+            translate(v = [174, 0, 0])
             {
-              translate(v = [174, 0, 0])
+              translate(v = [0, 31, 0])
               {
-                translate(v = [0, 31, 0])
+                translate(v = [0, 0, 30])
                 {
-                  translate(v = [0, 0, 30])
+                  intersection()
                   {
-                    intersection()
+                    sphere(r = 57.5);
+                    translate(v = [0, 0, -42])
                     {
-                      sphere(r = 57.5);
-                      translate(v = [0, 0, -42])
-                      {
-                        cylinder(h = 30, r = 95, center = false);
-                      }
+                      cylinder(h = 30, r = 95, center = false);
                     }
                   }
                 }

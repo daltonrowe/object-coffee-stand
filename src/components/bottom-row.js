@@ -40,16 +40,16 @@ export default function () {
       .translate_x(
         basketDiameter / 2 + needleDiameter / 2 + 10 + postExtraWidth / 2,
       )
-      .translate_z(tampOuterHeight / 2 - tampInset),
+      .translate_z(tampOuterHeight / 2),
     pourover()
       .translate_y((basketHeight + ringHeight + 10) / 2)
       .translate_x(
         basketDiameter / 2 +
-          tampDiameter / 4 +
-          columnSpacing +
-          postExtraWidth +
-          10 +
-          pouroverBaseDiameter / 2,
+        tampDiameter / 4 +
+        columnSpacing +
+        postExtraWidth +
+        10 +
+        pouroverBaseDiameter / 2,
       )
       .translate_z(pouroverIntersectionHeight / 2),
   )
@@ -62,6 +62,6 @@ export default function () {
         columnSpacing +
         pouroverBaseDiameter / 2) /
         2) *
-        -1,
+      -1,
     );
 }
