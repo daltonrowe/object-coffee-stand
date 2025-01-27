@@ -1,0 +1,14 @@
+{
+  "name": "object-keyhook",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node --watch-path=src build.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "scad-js": "git@github.com:daltonrowe/scad-js-esm.git"
+  },
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT"
+}
