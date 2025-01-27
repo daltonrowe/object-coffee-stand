@@ -13,8 +13,8 @@ function constant(value) {
 
 export const nothing = 0.03;
 
-export const columnSpacing = 20;
-export const rowSpacing = 60;
+export const columnSpacing = 10;
+export const rowSpacing = 50;
 export const grinderSpacing = 20;
 
 export const pouroverBaseDiameter = 95;
@@ -31,11 +31,10 @@ export const basketDiameter = 63;
 export const basketHeight = 25;
 export const basketInset = 20;
 
-export const bodyDepth = 200;
-export const bodyWidth =
-  pouroverBaseDiameter + tampDiameter + ringDiameter + columnSpacing * 3;
+export const bodyDepth = 180;
+export const bodyWidth = 250;
 export const bodyNearHeight = 40;
-export const bodyFarHeight = bodyNearHeight + 10;
+export const bodyFarHeight = bodyNearHeight + 7;
 
 export const grinder1Height = 146;
 export const grinder1Diameter = 50;

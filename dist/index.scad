@@ -1,26 +1,26 @@
 $fn = 100;
 difference()
 {
-  translate(v = [0, 0, -25])
+  translate(v = [0, 0, -23.5])
   {
-    translate(v = [0, -100, 0])
+    translate(v = [0, -90, 0])
     {
       rotate(a = [90, 0, 90], v = undef)
       {
-        linear_extrude(height = 282, center = true, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
+        linear_extrude(height = 250, center = true, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
         {
-          polygon(points = [[0, 0], [200, 0], [200, 50], [0, 40]], paths = undef, convexity = 1);
+          polygon(points = [[0, 0], [180, 0], [180, 47], [0, 40]], paths = undef, convexity = 1);
         }
       }
     }
   }
-  translate(v = [5, 0, 0])
+  translate(v = [2.5, 0, 0])
   {
     translate(v = [0, 55, 0])
     {
       translate(v = [0, 0, 40])
       {
-        translate(v = [-113.5, 0, 0])
+        translate(v = [-98.5, 0, 0])
         {
           translate(v = [8.5, 0, 0])
           {
@@ -32,12 +32,12 @@ difference()
               }
               translate(v = [0, 0, 50])
               {
-                translate(v = [62, 0, 0])
+                translate(v = [52, 0, 0])
                 {
                   cube(size = [15, 15, 200], center = true);
                 }
               }
-              translate(v = [167, 0, 0])
+              translate(v = [142, 0, 0])
               {
                 translate(v = [-35, 0, 0])
                 {
@@ -65,20 +65,23 @@ difference()
   }
   translate(v = [0, -40, 0])
   {
-    translate(v = [-99.5, 0, 0])
+    translate(v = [-87, 0, 0])
     {
       translate(v = [0, -26, 0])
       {
         union()
         {
-          translate(v = [0, 0, 11.5])
+          translate(v = [0, 10, 0])
           {
-            rotate(a = 90, v = [1, 0, 0])
+            translate(v = [0, 0, 11.5])
             {
-              cylinder(h = 27, r = 33.5, center = true);
+              rotate(a = 90, v = [1, 0, 0])
+              {
+                cylinder(h = 27, r = 33.5, center = true);
+              }
             }
           }
-          translate(v = [0, 60, 0])
+          translate(v = [0, 50, 0])
           {
             translate(v = [0, 0, 13.5])
             {
@@ -90,16 +93,16 @@ difference()
           }
           translate(v = [0, 0, 21.5])
           {
-            translate(v = [75.5, 0, 0])
+            translate(v = [70.5, 0, 0])
             {
               cylinder(h = 83, r = 9, center = true);
             }
           }
           translate(v = [0, 0, 40])
           {
-            translate(v = [75.5, 0, 0])
+            translate(v = [70.5, 0, 0])
             {
-              translate(v = [0, 60, 0])
+              translate(v = [0, 50, 0])
               {
                 translate(v = [0, 0, -36.5])
                 {
@@ -117,7 +120,7 @@ difference()
           }
           translate(v = [0, 0, 15])
           {
-            translate(v = [174, 0, 0])
+            translate(v = [156.5, 0, 0])
             {
               translate(v = [0, 31, 0])
               {
