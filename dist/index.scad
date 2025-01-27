@@ -1,15 +1,18 @@
 $fn = 100;
 difference()
 {
-  translate(v = [0, 0, -23.5])
+  #union()
   {
-    translate(v = [0, -90, 0])
+    translate(v = [0, 0, -23.5])
     {
-      rotate(a = [90, 0, 90], v = undef)
+      translate(v = [0, -90, 0])
       {
-        linear_extrude(height = 250, center = true, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
+        rotate(a = [90, 0, 90], v = undef)
         {
-          polygon(points = [[0, 0], [180, 0], [180, 47], [0, 40]], paths = undef, convexity = 1);
+          linear_extrude(height = 250, center = true, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
+          {
+            polygon(points = [[0, 0], [180, 0], [180, 47], [0, 40]], paths = undef, convexity = 1);
+          }
         }
       }
     }
@@ -43,11 +46,11 @@ difference()
                 {
                   union()
                   {
-                    translate(v = [0, 0, 23])
+                    translate(v = [0, 0, 13])
                     {
                       cylinder(h = 146, r = 25, center = true);
                     }
-                    translate(v = [0, 0, 21.5])
+                    translate(v = [0, 0, 11.5])
                     {
                       translate(v = [70, 0, 0])
                       {
@@ -98,7 +101,7 @@ difference()
               cylinder(h = 83, r = 9, center = true);
             }
           }
-          translate(v = [0, 0, 40])
+          translate(v = [0, 0, 25])
           {
             translate(v = [70.5, 0, 0])
             {

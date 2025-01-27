@@ -15,6 +15,7 @@ import {
   ringInset,
   rowSpacing,
   tampDiameter,
+  tampInset,
   tampOuterHeight,
 } from "../constants.js";
 import basket from "./basket.js";
@@ -41,16 +42,16 @@ export default function () {
       .translate_x(
         basketDiameter / 2 + needleDiameter / 2 + 5 + postExtraWidth / 2,
       )
-      .translate_z(tampOuterHeight / 2),
+      .translate_z(tampOuterHeight / 2 - tampInset),
     pourover()
       .translate_y((basketHeight + ringHeight + 10) / 2)
       .translate_x(
         basketDiameter / 2 +
-        tampDiameter / 4 +
-        columnSpacing +
-        postExtraWidth +
-        2.5 +
-        pouroverBaseDiameter / 2,
+          tampDiameter / 4 +
+          columnSpacing +
+          postExtraWidth +
+          2.5 +
+          pouroverBaseDiameter / 2,
       )
       .translate_z(pouroverIntersectionHeight / 2),
   )
@@ -63,6 +64,6 @@ export default function () {
         columnSpacing / 2 +
         pouroverBaseDiameter / 2) /
         2) *
-      -1,
+        -1,
     );
 }

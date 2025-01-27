@@ -42,7 +42,7 @@ export const grinder1Diameter = 50;
 export const grinder2Height = 143;
 export const grinder2Diameter = 50;
 
-export const grindersInset = 50;
+export const grindersInset = 60;
 
 export const postWidth = 15;
 export const postExtraWidth = 50;
@@ -64,4 +64,4 @@ export const tampInnerDiameter = 54;
 export const tampInnerHeight = 7;
 export const tampOuterDiameter = 60;
 export const tampOuterHeight = 80;
-export const tampInset = 8;
+export const tampInset = 15;
