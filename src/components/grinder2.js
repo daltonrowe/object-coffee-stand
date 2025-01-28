@@ -1,6 +1,6 @@
 import { cylinder } from "scad-js";
-import { grinder1Diameter, grinder1Height } from "../constants.js";
+import { grinder2Diameter, grinder2Height } from "../constants.js";
 
 export default function () {
-  return cylinder(grinder1Height, grinder1Diameter / 2);
+  return cylinder(grinder2Height, grinder2Diameter / 2);
 }

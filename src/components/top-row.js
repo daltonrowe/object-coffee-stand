@@ -37,16 +37,16 @@ export default function () {
     ).translate_x((grinder1Diameter / 2 + grinderSpacing / 2) * -1);
 
   return union(
-    portafilter().translate_z(portafilterHeight / 2 - portafilterInset),
+    portafilter().translate_z(portafilterHeight / 2 - portafilterInset).translate_x(5),
     post()
-      .translate_x(portafilterDiameter / 2 + postExtraWidth / 2 + columnSpacing)
+      .translate_x(portafilterDiameter / 2 + postExtraWidth / 2 + columnSpacing - 2.5)
       .translate_z(postHeight / 2 - postInset),
     grinders().translate_x(
       portafilterDiameter / 2 +
-        columnSpacing +
-        postExtraWidth +
-        columnSpacing +
-        grindersWidth / 2,
+      columnSpacing +
+      postExtraWidth +
+      columnSpacing +
+      grindersWidth / 2 - 3,
     ),
   )
     .translate_x(portafilterDiameter / 4)

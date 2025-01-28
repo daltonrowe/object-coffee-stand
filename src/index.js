@@ -5,7 +5,7 @@ import topRow from "./components/top-row.js";
 
 export default function () {
   return difference(
-    body().debug(),
+    body(),
     topRow().translate_z(40).translate_y(55).translate_x(2.5),
     bottomRow().translate_y(-40),
   );
