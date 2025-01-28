@@ -62,7 +62,7 @@ export default function () {
         postExtraWidth +
         pouroverBaseDiameter / 2,
       )
-      .translate_z(pouroverIntersectionHeight / 2),
+      .translate_z(pouroverIntersectionHeight / 2 - 5),
   )
     .translate_y((basketHeight / 2 + ringHeight / 2) * -1)
     .translate_x(

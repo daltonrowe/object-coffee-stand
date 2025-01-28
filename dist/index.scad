@@ -3,13 +3,13 @@ difference()
 {
   translate(v = [0, 0, -24])
   {
-    translate(v = [0, -90, 0])
+    translate(v = [0, -85, 0])
     {
       rotate(a = [90, 0, 90], v = undef)
       {
         linear_extrude(height = 250, center = true, convexity = undef, twist = undef, slices = undef, scale = 1, $fn = 20)
         {
-          polygon(points = [[0, 0], [180, 0], [180, 48], [0, 40]], paths = undef, convexity = 1);
+          polygon(points = [[0, 0], [170, 0], [170, 48], [0, 40]], paths = undef, convexity = 1);
         }
       }
     }
@@ -66,7 +66,7 @@ difference()
       }
     }
   }
-  translate(v = [0, -40, 0])
+  translate(v = [0, -35, 0])
   {
     translate(v = [-86.75, 0, 0])
     {
@@ -76,7 +76,7 @@ difference()
         {
           translate(v = [0, 13, 0])
           {
-            translate(v = [0, 0, 9])
+            translate(v = [0, 0, 14])
             {
               rotate(a = 90, v = [1, 0, 0])
               {
@@ -135,7 +135,7 @@ difference()
               }
             }
           }
-          translate(v = [0, 0, 15])
+          translate(v = [0, 0, 10])
           {
             translate(v = [156, 0, 0])
             {

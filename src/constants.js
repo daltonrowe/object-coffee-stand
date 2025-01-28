@@ -30,11 +30,11 @@ export const ringInset = 20;
 
 export const basketDiameter = 58;
 export const basketHeight = 23;
-export const basketInset = 20;
+export const basketInset = 15;
 export const basketLipHeight = 5;
 export const basketLipDiameter = 63;
 
-export const bodyDepth = 180;
+export const bodyDepth = 170;
 export const bodyWidth = 250;
 export const bodyNearHeight = 40;
 export const bodyFarHeight = bodyNearHeight + 8;

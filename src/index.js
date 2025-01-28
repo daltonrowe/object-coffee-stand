@@ -1,4 +1,4 @@
-import { difference } from "scad-js";
+import { difference, union } from "scad-js";
 import body from "./components/body.js";
 import bottomRow from "./components/bottom-row.js";
 import topRow from "./components/top-row.js";
@@ -7,6 +7,6 @@ export default function () {
   return difference(
     body(),
     topRow().translate_z(40).translate_y(55).translate_x(2.5),
-    bottomRow().translate_y(-40),
+    bottomRow().translate_y(-35),
   );
 }
